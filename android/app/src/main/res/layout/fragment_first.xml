@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/clc"
+    tools:context=".FirstFragment">
+
+    <TextView
+        android:id="@+id/T_BTStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="蓝牙未连接"
+        android:textColor="@color/teal_200"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/panel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btn_lm0"
+                style="@android:style/Widget.Holo.ImageButton"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="8dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/off" />
+
+            <ImageButton
+                android:id="@+id/btn_lm1"
+                style="@android:style/Widget.Holo.ImageButton"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="8dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/cl" />
+
+            <ImageButton
+                android:id="@+id/btn_lm2"
+                style="@android:style/Widget.Holo.ImageButton"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="8dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/f" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btn_fm0"
+                style="@android:style/Widget.Holo.ImageButton"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="8dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/off1" />
+
+            <ImageButton
+                android:id="@+id/btn_fm1"
+                style="@android:style/Widget.Holo.ImageButton"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="8dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/ff" />
+
+            <ImageButton
+                android:id="@+id/btn_fm2"
+                style="@android:style/Widget.Holo.ImageButton"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="8dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/bf" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btn_bloff"
+                style="@android:style/Widget.Holo.ImageButton"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="8dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/off2"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/btn_blon"
+                style="@android:style/Widget.Holo.ImageButton"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="8dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/fb" />
+
+            <ImageButton
+                android:id="@+id/btn_bl"
+                style="@android:style/Widget.Holo.ImageButton"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="8dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/breakl" />
+
+            <ImageButton
+                android:id="@+id/btn_rl"
+                style="@android:style/Widget.Holo.ImageButton"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="8dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/rev" />
+
+            <ImageButton
+                android:id="@+id/imageButton14"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="8dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/bee"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btn_l"
+                style="@android:style/Widget.Holo.ImageButton"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="8dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/l" />
+
+            <ImageButton
+                android:id="@+id/btn_w"
+                style="@android:style/Widget.Holo.ImageButton"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="8dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/w" />
+
+            <ImageButton
+                android:id="@+id/btn_r"
+                style="@android:style/Widget.Holo.ImageButton"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="8dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/r" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btn_bee"
+                style="@android:style/Widget.Holo.ImageButton"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="8dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/bee" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btn_l1"
+                style="@android:style/Widget.Holo.ImageButton"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_margin="6dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/l1" />
+
+            <ImageButton
+                android:id="@+id/btn_l2"
+                style="@android:style/Widget.Holo.ImageButton"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_margin="6dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/l2" />
+
+            <ImageButton
+                android:id="@+id/btn_l3"
+                style="@android:style/Widget.Holo.ImageButton"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_margin="6dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/l3" />
+
+            <ImageButton
+                android:id="@+id/btn_l4"
+                style="@android:style/Widget.Holo.ImageButton"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_margin="6dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/l4" />
+
+            <ImageButton
+                android:id="@+id/btn_l5"
+                style="@android:style/Widget.Holo.ImageButton"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_margin="6dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/l5" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textview_first"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_first_fragment"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@id/button_first"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_first"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/next"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textview_first" />
+</androidx.constraintlayout.widget.ConstraintLayout>
