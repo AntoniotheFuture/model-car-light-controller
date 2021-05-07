@@ -1,4 +1,4 @@
-BL51 BANKED LINKER/LOCATER V6.22                                                        05/02/2021  23:19:37  PAGE 1
+BL51 BANKED LINKER/LOCATER V6.22                                                        05/07/2021  18:08:34  PAGE 1
 
 
 BL51 BANKED LINKER/LOCATER V6.22, INVOKED BY:
@@ -34,10 +34,10 @@ LINK MAP OF MODULE:  main (MAIN)
             CODE    0003H     0020H     UNIT         ?PR?_DELAY_MS?MAIN
             CODE    0023H     0003H     ABSOLUTE     
             CODE    0026H     01A9H     UNIT         ?PR?UART_SER?MAIN
-            CODE    01CFH     0091H     UNIT         ?PR?MAIN?MAIN
-            CODE    0260H     008CH     UNIT         ?C_C51STARTUP
-            CODE    02ECH     0021H     UNIT         ?C_INITSEG
-            CODE    030DH     0013H     UNIT         ?PR?BTINIT?MAIN
+            CODE    01CFH     0099H     UNIT         ?PR?MAIN?MAIN
+            CODE    0268H     008CH     UNIT         ?C_C51STARTUP
+            CODE    02F4H     0021H     UNIT         ?C_INITSEG
+            CODE    0315H     0013H     UNIT         ?PR?BTINIT?MAIN
 
 
 
@@ -59,7 +59,7 @@ SEGMENT                          DATA_GROUP
   +--> ?PR?BTINIT?MAIN
   +--> ?PR?_DELAY_MS?MAIN
 
-BL51 BANKED LINKER/LOCATER V6.22                                                      05/02/2021  23:19:37  PAGE 2
+BL51 BANKED LINKER/LOCATER V6.22                                                      05/07/2021  18:08:34  PAGE 2
 
 
 
@@ -111,7 +111,7 @@ SYMBOL TABLE OF MODULE:  main (MAIN)
   B:0020H.1       PUBLIC        BuzzerOn
   D:0012H         PUBLIC        fogMode
   B:0020H.2       PUBLIC        breakOn
-  C:030DH         PUBLIC        BTinit
+  C:0315H         PUBLIC        BTinit
   D:008DH         PUBLIC        TH1
   B:0020H.3       PUBLIC        backOn
   D:008BH         PUBLIC        TL1
@@ -119,7 +119,7 @@ SYMBOL TABLE OF MODULE:  main (MAIN)
   B:0080H.6       PUBLIC        L_Re
   D:00C8H         PUBLIC        T2CON
   D:00D0H         PUBLIC        PSW
-BL51 BANKED LINKER/LOCATER V6.22                                                      05/02/2021  23:19:37  PAGE 3
+BL51 BANKED LINKER/LOCATER V6.22                                                      05/07/2021  18:08:34  PAGE 3
 
 
   -------         PROC          _DELAY_MS
@@ -179,7 +179,7 @@ SYMBOL TABLE OF MODULE:  main (MAIN)
   C:0155H         LINE#         80
   C:0159H         LINE#         81
   C:015DH         LINE#         82
-BL51 BANKED LINKER/LOCATER V6.22                                                      05/02/2021  23:19:37  PAGE 4
+BL51 BANKED LINKER/LOCATER V6.22                                                      05/07/2021  18:08:34  PAGE 4
 
 
   C:0161H         LINE#         83
@@ -225,21 +225,21 @@ SYMBOL TABLE OF MODULE:  main (MAIN)
   C:01C0H         LINE#         126
   -------         ENDPROC       UART_SER
   -------         PROC          BTINIT
-  C:030DH         LINE#         129
-  C:030DH         LINE#         130
-  C:030DH         LINE#         132
-  C:0310H         LINE#         133
-  C:0313H         LINE#         134
-  C:0316H         LINE#         135
-  C:0319H         LINE#         136
-  C:031BH         LINE#         137
-  C:031DH         LINE#         138
-  C:031FH         LINE#         139
+  C:0315H         LINE#         129
+  C:0315H         LINE#         130
+  C:0315H         LINE#         132
+  C:0318H         LINE#         133
+  C:031BH         LINE#         134
+  C:031EH         LINE#         135
+  C:0321H         LINE#         136
+  C:0323H         LINE#         137
+  C:0325H         LINE#         138
+  C:0327H         LINE#         139
   -------         ENDPROC       BTINIT
   -------         PROC          MAIN
   C:01CFH         LINE#         141
   C:01CFH         LINE#         142
-BL51 BANKED LINKER/LOCATER V6.22                                                      05/02/2021  23:19:37  PAGE 5
+BL51 BANKED LINKER/LOCATER V6.22                                                      05/07/2021  18:08:34  PAGE 5
 
 
   C:01CFH         LINE#         143
@@ -282,14 +282,17 @@ SYMBOL TABLE OF MODULE:  main (MAIN)
   C:022AH         LINE#         184
   C:023BH         LINE#         185
   C:023BH         LINE#         186
-  C:0242H         LINE#         187
-  C:0248H         LINE#         188
-  C:0250H         LINE#         189
-  C:0259H         LINE#         190
-  C:025EH         LINE#         191
-  C:025EH         LINE#         192
+  C:0241H         LINE#         187
+  C:0243H         LINE#         188
+  C:0243H         LINE#         189
+  C:024AH         LINE#         190
+  C:0250H         LINE#         191
+  C:0258H         LINE#         192
+  C:0261H         LINE#         193
+  C:0266H         LINE#         194
+  C:0266H         LINE#         195
   -------         ENDPROC       MAIN
   -------         ENDMOD        MAIN
 
-Program Size: data=22.4 xdata=0 code=800
+Program Size: data=22.4 xdata=0 code=808
 LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)

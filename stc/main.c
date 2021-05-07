@@ -29,7 +29,7 @@ void Delay_ms(unsigned int n)
 {
 	unsigned int  i,j;
 	for(i=0;i<n;i++)
-		for(j=0;j<110;j++);
+		for(j=0;j<500;j++);//110
 }
 
 					#define uchar unsigned char
@@ -182,6 +182,9 @@ void main()
 		//≈–∂œ∑‰√˘∆˜
 		if(backOn || BuzzerOn){
 			L_Buzzer = diOn > 1;
+		}
+		if(!backOn && !BuzzerOn){
+			L_Buzzer = 1;
 		}
 		Delay_ms(500);		 //—” ±0.5s		
 		twinkleOn = ~twinkleOn;
