@@ -19,4 +19,4 @@
 指令详见工程
 
 ## 实物示例
-待补充
+[乐高科技组车模亮灯工程-拟真向-蓝牙控制](https://www.bilibili.com/video/BV1RK4y1w7yD)
